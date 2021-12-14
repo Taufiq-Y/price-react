@@ -1,0 +1,80 @@
+:root{
+  --primary:#2F80ED;
+  --secondary:#56CCF2;
+}
+
+
+.App{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+.heading{
+  color: crimson
+}
+.card{
+  background-color: white;
+  border-radius: 20px;
+  padding: 16px;
+  margin-bottom: 8px;
+  margin: 35px 20px;
+}
+.flex{
+  display:flex;
+  justify-content: space-around;
+}
+body{
+  background-color: skyblue;
+  background: linear-gradient(180deg, var(--primary), var(--secondary));
+}
+.features{
+  list-style: none;
+  text-align: left;
+  border-top: 1px solid rgb(212, 205, 205);
+  padding-top: 20px;
+}
+.features > li{
+  margin-bottom: 8px;
+  font-size: 20px;
+}
+.features > li::marker{
+  content: "✔️ ";
+}
+.card:nth-child(1) .features > li:nth-child(n+5)::marker{
+  content: "❌ ";
+}
+.card:nth-child(1) .features > li:nth-child(n+5){
+  opacity: 70%;
+}
+.card:nth-child(2) .features> li:nth-child(n+8)::marker{
+  content: "❌ ";
+}
+.card:nth-child(2) .features > li:nth-child(n+8){
+  opacity: 70%;
+}
+button {
+  width: 100%;
+  background-color: #0d6efd;
+  border-color: #0d6efd;
+  color:white;
+  border-radius: 20px;
+  padding: 10px;
+  font-size: 14px;
+  letter-spacing: 3px;
+  opacity: 80%;
+}
+button:hover{
+background-color: #0b5ed7;
+border-color: #0a58ca;
+}
+.price{
+  font-size: 30px;
+  margin: 10px 0;
+}
+.price-duration{
+  font-size: 15px;
+}
+.plan-name{
+  color: slategray;
+  font-size: 25px;
+  letter-spacing: 1.5px;
+}
