@@ -39,15 +39,15 @@ body{
 .features > li::marker{
   content: "✔️ ";
 }
-/* .card:nth-child(1) .features > li:nth-child(n+5)::marker{
+.card:nth-child(1) .features > li:nth-child(n+5)::marker{
   content: "❌ ";
-} */
+}
 .card:nth-child(1) .features > li:nth-child(n+5){
   opacity: 70%;
 }
-/* .card:nth-child(2) .features> li:nth-child(n+8)::marker{
+.card:nth-child(2) .features> li:nth-child(n+8)::marker{
   content: "❌ ";
-} */
+}
 .card:nth-child(2) .features > li:nth-child(n+8){
   opacity: 70%;
 }
